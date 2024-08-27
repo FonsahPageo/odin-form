@@ -11,7 +11,7 @@
 <body>
     <div class="main">
         <div class="sidebar">
-            <div class="hero">
+            <div class="odin">
                 <img src="images/odin_logo.png" alt="Odin Logo">
                 <p>Odin</p>
             </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <!-- <div class="landing">
+        <div class="landing">
             <div class="message">
                 <p>
                     This is not a real online service! You know you need something like this in your life to help you
@@ -34,33 +34,48 @@
                 </p>
             </div>
 
-            <div class="form-section">
-                <h2>Let's do this!</h2>
-                <form action="" class="signup-form">
-                    <div>
-                        <label for="firstname">First Name</label><br>
-                        <input type="text" name="firstname" id="firstname" required minlength="4"><br>
+            <div>
+                <form action="#">
+                    <div class="form-fields">
+                        <h2>Let's do this!</h2><br>
+                        <div class="form-row">
+                            <div class="column">
+                                <label for="firstname">First Name</label><br>
+                                <input type="text" name="firstname" id="firstname" required minlength="4"><br>
+                            </div>
 
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email" required><br>
+                            <div class="column">
+                                <label for="lastname">Last Name</label><br>
+                                <input type="text" name="lastname" id="lastname" required minlength="6"><br>
+                            </div>
+                        </div>
 
-                        <label for="password">Password</label><br>
-                        <input type="password" name="password" id="password" required minlength="4">
+                        <div class="form-row">
+                            <div class="column">
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" required><br>
+                            </div>
 
+
+                            <div class="column">
+                                <label for="contact">Phone Number</label><br>
+                                <input type="tel" name="contact" id="contact" required minlength="7"><br>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="column">
+                                <label for="password">Password</label><br>
+                                <input type="password" name="password" id="password" required minlength="4"><br>
+                            </div>
+
+                            <div class="column">
+                                <label for="firstname">Confirm Password</label><br>
+                                <input type="password" name="confirm-password" id="confirm-password" required
+                                    minlength="4"><br>
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="lastname">Last Name</label><br>
-                        <input type="text" name="lastname" id="lastname" required minlength="6"><br>
-
-
-                        <label for="contact">Phone Number</label><br>
-                        <input type="tel" name="contact" id="contact" required minlength="7"><br>
-
-                        <label for="firstname">Confirm Password</label><br>
-                        <input type="password" name="confirm-password" id="confirm-password" required minlength="4">
-                    </div>
-
                     <div>
                         <button type="submit">Create Account</button>
                         <p>Already have an account? <a href="">Log In</a></p>
@@ -69,7 +84,7 @@
             </div>
 
 
-        </div> -->
+        </div>
     </div>
 </body>
 

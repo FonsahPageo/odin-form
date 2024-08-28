@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
@@ -35,13 +36,13 @@
             </div>
 
             <div>
-                <form action="#">
+                <form action="index.html" onsubmit="return validatePassword()">
                     <div class="form-fields">
                         <h2>Let's do this!</h2><br>
                         <div class="form-row">
                             <div class="column">
-                                <label for="firstname">First Name</label><br>
-                                <input type="text" name="firstname" id="firstname" required minlength="4"><br>
+                                <label for="surname">First Name</label><br>
+                                <input type="text" name="surname" id="surname" required minlength="4"><br>
                             </div>
 
                             <div class="column">
@@ -66,13 +67,19 @@
                         <div class="form-row">
                             <div class="column">
                                 <label for="password">Password</label><br>
-                                <input type="password" name="password" id="password" required minlength="4"><br>
+                                <div class="password-wrapper">
+                                    <input type="password" name="password" id="password" required minlength="6">
+                                    <i class="fa-solid fa-eye-slash toggle-password"></i><br>
+                                </div>
                             </div>
 
                             <div class="column">
-                                <label for="firstname">Confirm Password</label><br>
-                                <input type="password" name="confirm-password" id="confirm-password" required
-                                    minlength="4"><br>
+                                <label for="confirmPassword">Confirm Password</label><br>
+                                <div class="password-wrapper">
+                                    <input type="password" name="confirmPassword" id="confirmPassword" required minlength="6">
+                                    <i class="fa-solid fa-eye-slash toggle-password"></i><br>
+                                </div>
+                                <span id="passwordError" class="error"></span>
                             </div>
                         </div>
                     </div>
@@ -82,10 +89,10 @@
                     </div>
                 </form>
             </div>
-
-
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

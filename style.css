@@ -60,7 +60,7 @@
 .form-row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .column{
@@ -86,10 +86,42 @@ input{
     box-sizing: border-box;
 }
 
+input:valid{
+    border: 1px solid green;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
 button{
     background-color: #596D48;
     color: #fff;
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+.password-wrapper{
+    position: relative;
+}
+
+.password-wrapper input{
+    padding-right: 30px;
+}
+
+.toggle-password{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
 }
